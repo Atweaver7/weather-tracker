@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    border: 2px solid pink;
+ 
+}
+
+.page-container {
+    display: flex;
+}
+.city-container {
+    padding: 20% 5% 20% 5%;
+}
+.forecast-container {
+    padding: 20% 5% 20% 5%;
+}
+.header {
+    text-align: center;
+    border: 2px blue solid;
+    background-color: cornflowerblue;
+    padding: 20px 0 20px 0;
+}
+
+.search-container {
+    text-align: center;
+    padding-top: 40px;
+    width: 20%;
+    margin-bottom: 80%;
+    
+    ;
+}
+.search-container h2 {
+    padding-bottom: 20px;
+}
+.btn {
+    font-size: 1.3rem;
+    text-decoration:none;
+    padding: 6px 5px;
+    width: 100%;
+    display: block;
+    margin: 5px 0;
+    border-radius: var(--border-radius);
+    color: var(--primary);
+    border: none;
+    outline: none;
+    background-color: var(--light-dark);
+    box-shadow: 3px 3px var(--dark);
+    transform: translate(-1px, -1px);
+  }
+  .btn:hover {
+    color: var(--primary);
+    background-color: var(--tertiary);
+    transform: translate(0, 0);
+    box-shadow: 2px 2px var(--dark);
+  }

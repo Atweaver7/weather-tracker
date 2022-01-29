@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<header class="header">
+    <div>
+        <h1><span>Weather Dashboard</span></h1>
+    </div>
+</header>
+<div class="page-container">
+    <form id="user-form">
+        <label for="city">City</label>
+        <input type="text"
+        name="city-name"
+        id="city-name"
+        autofocus="true"/>
+        <button type="submit" class="btn">Search</button>
+        <!-- old button  -->
+        <!-- <div class="search-container">
+            <h2>Search for City</h2>
+    <input type="text">
+    <button id="search-button">Search</button>
+</div> -->
+<div>
+<div class="city-container">
+    <p id="display-city"></p>
+    <p id="tempature"></p>
+    <img id="weather-icon" src="" alt="weather img">
+</div>
+<div class="forecast-container">
+<p id="display-forecast">
+
+</p>
+</div>
+</div>
+</div>
+
+</form>
+
+
+
+
+
+
+
+ <script src="./assets/js/script.js"></script>   
+</body>
+</html>
