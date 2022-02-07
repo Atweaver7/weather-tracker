@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,42 +8,41 @@
     <title>Weather</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-<body>
-<header class="header">
-    <div>
-        <h1><span>Weather Dashboard</span></h1>
+
+<body class="">
+    <header class="header">
+        <div>
+            <h1><span>Weather Dashboard</span></h1>
+        </div>
+    </header>
+    <div class="page-container container-fluid row">
+        <form class="col-3" id="user-form">
+            <label for="city">City</label>
+            <input class="border border-primary" placeholder="Type City Name..." type="text" name="city-name" id="city-name" autofocus="true" />
+            <button type="submit" class="btn btn-primary">Search</button>
+        </form>
+
+        <div class="forecast-container row row-cols-2">
+            <div id="display-forecast" class="display-forecast">
+            </div>
+        </div>
     </div>
-</header>
-<div class="page-container">
-    <form id="user-form">
-        <label for="city">City</label>
-        <input type="text"
-        name="city-name"
-        id="city-name"
-        autofocus="true"/>
-        <button type="submit" class="btn">Search</button>
-        <!-- old button  -->
-        <!-- <div class="search-container">
-            <h2>Search for City</h2>
-    <input type="text">
-    <button id="search-button">Search</button>
-</div> -->
-<div>
-<div class="city-container">
-    <p id="display-city"></p>
-    <p id="tempature"></p>
-    <img id="weather-icon" src="" alt="weather img">
-</div>
-<div class="forecast-container">
-<p id="display-forecast">
-
-</p>
-</div>
-</div>
-</div>
-
-</form>
+    <div class="row">
+        <div class="">
+            <div id="search-history" class="search-container">
+                <p id="display-history"></p>
+            </div>
+        </div>
+        <div class="city-container col-4 ">
+            <h4 id="current-forecast" class="hide col current-container">Current Weather</h4>
+            <p id="display-city" class="col "></p>
+            <p id="tempature" class="col"></p>
+            <img id="weather-icon" class="weather-icon hide col" src="" alt="weather img">
+        </div>
+    </div>
 
 
 
@@ -50,6 +50,9 @@
 
 
 
- <script src="./assets/js/script.js"></script>   
+
+
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
